@@ -1,0 +1,42 @@
+{
+  "name": "create-move-mini-app",
+  "version": "1.0.0",
+  "description": "Create a new Movement mini app with the Movement SDK",
+  "main": "bin/create-move-mini-app.js",
+  "bin": {
+    "create-move-mini-app": "./bin/create-move-mini-app.js"
+  },
+  "scripts": {
+    "test": "node bin/create-move-mini-app.js test-app --test",
+    "dev": "node bin/create-move-mini-app.js test-app --test"
+  },
+  "keywords": [
+    "movement",
+    "mini-app",
+    "sdk",
+    "blockchain",
+    "web3",
+    "cli"
+  ],
+  "author": "Movement Labs",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.12",
+    "chalk": "^4.1.2",
+    "fs-extra": "^11.1.1",
+    "ora": "^5.4.1"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andygmove/create-move-mini-app.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
