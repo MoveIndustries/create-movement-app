@@ -26,7 +26,8 @@ createApp(appName || 'test-app', { isTest })
       console.log(chalk.white(`  cd ${appName}`));
       console.log(chalk.white(`  pnpm install`));
       console.log(chalk.white(`  pnpm dev`));
-      console.log(chalk.gray(`\nThen open the Movement Everything app to test your mini app!`));
+      console.log(chalk.gray(`\nTo test your mini app, you'll need the Movement super app installed.`));
+      console.log(chalk.gray(`See tunneling options: https://mini-app-docs.vercel.app/quick-start/testing.html`));
     }
   })
   .catch((error) => {
