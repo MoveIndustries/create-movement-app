@@ -1,14 +1,14 @@
 {
-  "name": "create-move-mini-app",
-  "version": "1.0.0",
+  "name": "create-movement-app",
+  "version": "0.0.1",
   "description": "Create a new Movement mini app with the Movement SDK",
-  "main": "bin/create-move-mini-app.js",
+  "main": "bin/create-movement-app.js",
   "bin": {
-    "create-move-mini-app": "./bin/create-move-mini-app.js"
+    "create-movement-app": "./bin/create-movement-app.js"
   },
   "scripts": {
-    "test": "node bin/create-move-mini-app.js test-app --test",
-    "dev": "node bin/create-move-mini-app.js test-app --test"
+    "test": "node bin/create-movement-app.js test-app --test",
+    "dev": "node bin/create-movement-app.js test-app --test"
   },
   "keywords": [
     "movement",
@@ -21,20 +21,20 @@
   "author": "Movement Labs",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^9.2.12",
     "chalk": "^4.1.2",
+    "degit": "^2.8.4",
     "fs-extra": "^11.1.1",
+    "inquirer": "^9.2.12",
     "ora": "^5.4.1"
   },
   "files": [
     "bin/",
     "src/",
-    "templates/",
     "README.md"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/andygmove/create-move-mini-app.git"
+    "url": "https://github.com/moveindustries/create-movement-app.git"
   },
   "engines": {
     "node": ">=16.0.0"
