@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const { createApp } = require('../src/index.js');
-const chalk = require('chalk');
+import { createApp } from '../src/index.js';
+import chalk from 'chalk';
 
 // Get app name from command line arguments
 const appName = process.argv[2];
@@ -24,8 +24,8 @@ createApp(appName || 'test-app', { isTest })
       console.log(chalk.green('\nMovement mini app created successfully!'));
       console.log(chalk.yellow(`\nNext steps:`));
       console.log(chalk.white(`  cd ${appName}`));
-      console.log(chalk.white(`  npm install`));
-      console.log(chalk.white(`  npm run dev`));
+      console.log(chalk.white(`  pnpm install`));
+      console.log(chalk.white(`  pnpm dev`));
       console.log(chalk.gray(`\nThen open the Movement Everything app to test your mini app!`));
     }
   })

@@ -1,6 +1,6 @@
 {
   "name": "create-movement-app",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Create a new Movement mini app with the Movement SDK",
   "main": "bin/create-movement-app.js",
   "bin": {
@@ -20,6 +20,7 @@
   ],
   "author": "Movement Labs",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "chalk": "^4.1.2",
     "degit": "^2.8.4",

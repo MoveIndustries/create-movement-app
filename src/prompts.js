@@ -1,7 +1,7 @@
-const inquirer = require('inquirer');
-const chalk = require('chalk');
+import inquirer from 'inquirer';
+import chalk from 'chalk';
 
-const getPrompts = async (appName, options = {}) => {
+export const getPrompts = async (appName, options = {}) => {
   // Skip prompts in test mode
   if (options.isTest) {
     return {
@@ -39,5 +39,3 @@ const getPrompts = async (appName, options = {}) => {
   const answers = await inquirer.prompt(questions);
   return answers;
 };
-
-module.exports = { getPrompts };

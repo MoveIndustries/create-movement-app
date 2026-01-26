@@ -1,8 +1,8 @@
-const fs = require('fs-extra');
-const path = require('path');
-const chalk = require('chalk');
-const ora = require('ora');
-const degit = require('degit');
+import fs from 'fs-extra';
+import path from 'path';
+import chalk from 'chalk';
+import ora from 'ora';
+import degit from 'degit';
 
 const REPO_BASE = 'moveindustries/mini-app-examples';
 
@@ -67,4 +67,4 @@ const updatePackageJson = async (appName) => {
   }
 };
 
-module.exports = { createApp };
+export { createApp };
