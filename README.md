@@ -10,22 +10,27 @@ npx create-movement-app my-app
 
 ## What It Does
 
-The CLI will ask you:
+The CLI will guide you through:
 
-1. **App name** - Your mini app name
-2. **Use Movement Design System?** - Yes/No
+1. **App name** - Validates your app name (lowercase letters, numbers, and hyphens only)
+2. **Use Movement Design System?** - Choose between design system or basic template
+3. **Template Download** - Downloads from [mini-app-examples](https://github.com/moveindustries/mini-app-examples):
+   - With Design System → `mini-app-starter-ds`
+   - Without Design System → `mini-app-starter-basic`
+4. **Install dependencies?** - Automatically detects your package manager (pnpm/yarn/npm)
+5. **Open in editor?** - Detects available editors (Cursor, VS Code, Zed, Sublime)
+6. **Start dev server?** - Optionally starts the development server immediately
 
-Based on your choice, it downloads the appropriate starter template from [mini-app-examples](https://github.com/moveindustries/mini-app-examples):
+After setup, you'll see helpful links for testing and getting started with your mini app.
 
-- **With Design System** → `mini-app-starter-ds`
-- **Without Design System** → `mini-app-starter-basic`
+## Manual Setup
 
-## Running Your Mini App
+If you chose not to install dependencies or start the dev server during setup:
 
 ```bash
 cd my-app
-npm install
-npm run dev
+pnpm install  # or npm/yarn
+pnpm dev      # or npm run dev / yarn dev
 ```
 
 Then open the Movement Everything app to test your mini app.
